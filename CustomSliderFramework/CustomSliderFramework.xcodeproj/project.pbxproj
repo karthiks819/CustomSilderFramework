@@ -12,6 +12,7 @@
 		B5271B4329D94DB1006A30D2 /* CustomSliderFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5271B4229D94DB1006A30D2 /* CustomSliderFrameworkTests.swift */; };
 		B5271B4429D94DB1006A30D2 /* CustomSliderFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5271B3029D94C23006A30D2 /* CustomSliderFramework.framework */; platformFilter = ios; };
 		B5271B4B29D94EAC006A30D2 /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5271B4A29D94EAC006A30D2 /* ExtensionHelpers.swift */; };
+		B5F94F9929D96D3C009AC5AE /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5271B4A29D94EAC006A30D2 /* ExtensionHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5F94F9929D96D3C009AC5AE /* ExtensionHelpers.swift in Sources */,
 				B5271B4329D94DB1006A30D2 /* CustomSliderFrameworkTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
