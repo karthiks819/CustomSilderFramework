@@ -13,18 +13,18 @@ enum MarkStyle {
     case image(image: UIImage)
 }
 
-class CustomSlider: UISlider {
-    open var markValues: [String] = []
+open class CustomSlider: UISlider {
+     var markValues: [String] = []
     
-    open var markViews = [UIView]()
+     var markViews = [UIView]()
     
-    open var isStayToMark: Bool = true
+     var isStayToMark: Bool = true
     
-    open var markStyle: MarkStyle = .shape(width: 1, height: 4, cornerRadius: 1)
+     var markStyle: MarkStyle = .shape(width: 1, height: 4, cornerRadius: 1)
     
-    open var minimumMarkTintColor: UIColor = .white
+     var minimumMarkTintColor: UIColor = .white
     
-    open var maximumMarkTintColor: UIColor = .white
+     var maximumMarkTintColor: UIColor = .white
     
     private var markContentView: UIView!
     
@@ -96,6 +96,10 @@ class CustomSlider: UISlider {
                 markContentView.addSubview(markView)
             }
         }
+    }
+    
+    func printHello() {
+        print("hello")
     }
 }
 
