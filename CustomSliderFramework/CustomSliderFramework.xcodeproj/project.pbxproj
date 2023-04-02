@@ -9,27 +9,13 @@
 /* Begin PBXBuildFile section */
 		B5271B3429D94C23006A30D2 /* CustomSliderFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = B5271B3329D94C23006A30D2 /* CustomSliderFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B5271B3B29D94D81006A30D2 /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5271B3A29D94D81006A30D2 /* CustomSlider.swift */; };
-		B5271B4429D94DB1006A30D2 /* CustomSliderFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5271B3029D94C23006A30D2 /* CustomSliderFramework.framework */; platformFilter = ios; };
 		B5271B4B29D94EAC006A30D2 /* ExtensionHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5271B4A29D94EAC006A30D2 /* ExtensionHelpers.swift */; };
-		B5F94F9A29D96DDC009AC5AE /* CustomSliderFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5271B4229D94DB1006A30D2 /* CustomSliderFrameworkTests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		B5271B4529D94DB1006A30D2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B5271B2729D94C23006A30D2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B5271B2F29D94C23006A30D2;
-			remoteInfo = CustomSliderFramework;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		B5271B3029D94C23006A30D2 /* CustomSliderFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomSliderFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5271B3329D94C23006A30D2 /* CustomSliderFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomSliderFramework.h; sourceTree = "<group>"; };
 		B5271B3A29D94D81006A30D2 /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
-		B5271B4029D94DB1006A30D2 /* CustomSliderFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomSliderFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B5271B4229D94DB1006A30D2 /* CustomSliderFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSliderFrameworkTests.swift; sourceTree = "<group>"; };
 		B5271B4A29D94EAC006A30D2 /* ExtensionHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionHelpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,14 +27,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5271B3D29D94DB1006A30D2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5271B4429D94DB1006A30D2 /* CustomSliderFramework.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -56,7 +34,6 @@
 			isa = PBXGroup;
 			children = (
 				B5271B3229D94C23006A30D2 /* CustomSliderFramework */,
-				B5271B4129D94DB1006A30D2 /* CustomSliderFrameworkTests */,
 				B5271B3129D94C23006A30D2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -65,7 +42,6 @@
 			isa = PBXGroup;
 			children = (
 				B5271B3029D94C23006A30D2 /* CustomSliderFramework.framework */,
-				B5271B4029D94DB1006A30D2 /* CustomSliderFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,14 +54,6 @@
 				B5271B4A29D94EAC006A30D2 /* ExtensionHelpers.swift */,
 			);
 			path = CustomSliderFramework;
-			sourceTree = "<group>";
-		};
-		B5271B4129D94DB1006A30D2 /* CustomSliderFrameworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				B5271B4229D94DB1006A30D2 /* CustomSliderFrameworkTests.swift */,
-			);
-			path = CustomSliderFrameworkTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,24 +88,6 @@
 			productReference = B5271B3029D94C23006A30D2 /* CustomSliderFramework.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		B5271B3F29D94DB1006A30D2 /* CustomSliderFrameworkTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B5271B4729D94DB1006A30D2 /* Build configuration list for PBXNativeTarget "CustomSliderFrameworkTests" */;
-			buildPhases = (
-				B5271B3C29D94DB1006A30D2 /* Sources */,
-				B5271B3D29D94DB1006A30D2 /* Frameworks */,
-				B5271B3E29D94DB1006A30D2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B5271B4629D94DB1006A30D2 /* PBXTargetDependency */,
-			);
-			name = CustomSliderFrameworkTests;
-			productName = CustomSliderFrameworkTests;
-			productReference = B5271B4029D94DB1006A30D2 /* CustomSliderFrameworkTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -151,9 +101,6 @@
 					B5271B2F29D94C23006A30D2 = {
 						CreatedOnToolsVersion = 14.1;
 						LastSwiftMigration = 1410;
-					};
-					B5271B3F29D94DB1006A30D2 = {
-						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
@@ -171,20 +118,12 @@
 			projectRoot = "";
 			targets = (
 				B5271B2F29D94C23006A30D2 /* CustomSliderFramework */,
-				B5271B3F29D94DB1006A30D2 /* CustomSliderFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B5271B2E29D94C23006A30D2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B5271B3E29D94DB1006A30D2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -203,24 +142,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B5271B3C29D94DB1006A30D2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B5F94F9A29D96DDC009AC5AE /* CustomSliderFrameworkTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		B5271B4629D94DB1006A30D2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			platformFilter = ios;
-			target = B5271B2F29D94C23006A30D2 /* CustomSliderFramework */;
-			targetProxy = B5271B4529D94DB1006A30D2 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B5271B3529D94C23006A30D2 /* Debug */ = {
@@ -410,48 +332,6 @@
 			};
 			name = Release;
 		};
-		B5271B4829D94DB1006A30D2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.CustomSliderFrameworkTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		B5271B4929D94DB1006A30D2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.test.CustomSliderFrameworkTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -469,15 +349,6 @@
 			buildConfigurations = (
 				B5271B3829D94C23006A30D2 /* Debug */,
 				B5271B3929D94C23006A30D2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B5271B4729D94DB1006A30D2 /* Build configuration list for PBXNativeTarget "CustomSliderFrameworkTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B5271B4829D94DB1006A30D2 /* Debug */,
-				B5271B4929D94DB1006A30D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
