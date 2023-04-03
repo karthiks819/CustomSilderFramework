@@ -1,0 +1,6 @@
+framework module Pods_CustomSliderFramework {
+  umbrella header "Pods-CustomSliderFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}

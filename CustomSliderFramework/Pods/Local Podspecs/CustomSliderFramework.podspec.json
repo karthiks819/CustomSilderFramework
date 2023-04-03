@@ -1,0 +1,26 @@
+{
+  "name": "CustomSliderFramework",
+  "version": "0.0.2",
+  "summary": "UISlider with tap action and marker values on track rect and label for indicating the values of slider",
+  "description": "UISlider with custom features like tapping to the nearest value and values will be populated from the array",
+  "homepage": "https://github.com/karthiks819",
+  "license": {
+    "type": "MIT",
+    "text": "LICENSE"
+  },
+  "authors": {
+    "Karthik Solleti": "karthiks819@gmail.com"
+  },
+  "platforms": {
+    "ios": "11.0"
+  },
+  "swift_versions": "5.0",
+  "source": {
+    "git": "https://github.com/karthiks819/CustomSilderFramework.git",
+    "tag": "0.0.2"
+  },
+  "source_files": "CustomSliderFramework/**/*.{h,m,swift}",
+  "exclude_files": "Classes/Exclude",
+  "public_header_files": "CustomSliderFramework/**/*.h",
+  "swift_version": "5.0"
+}

@@ -14,7 +14,7 @@ enum MarkStyle {
 }
 
 open class CustomSlider: UISlider {
-     var markValues: [String] = []
+    open var markValues: [String] = []
     
      var markViews = [UIView]()
     

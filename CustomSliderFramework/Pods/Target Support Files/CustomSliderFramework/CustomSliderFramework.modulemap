@@ -1,0 +1,6 @@
+framework module CustomSliderFramework {
+  umbrella header "CustomSliderFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}
