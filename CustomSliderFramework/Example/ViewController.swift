@@ -9,18 +9,33 @@ import UIKit
 import CustomSliderFramework
 
 class ViewController: UIViewController {
-    var arr = ["12.0", "12.0", "12.0", "12.0"]
+    var arr = ["1", "2", "3", "4", "5", "6"]
+    
+    @IBOutlet weak var imageSlider: CustomSlider!
     @IBOutlet weak var markSlider: CustomSlider!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Mark type slider
         self.addTapGestureForSlider()
         markSlider.minimumValue = 0
         markSlider.maximumValue = Float(arr.count - 1)
+        markSlider.maximumTrackTintColor = .darkGray
         markSlider.markValues = arr
         DispatchQueue.main.async {
             self.markSlider.drawMarks(in: self.markSlider.bounds)
         }
         
+        
+        
+        //Image type with marker slider
+        imageSlider.minimumValue = 0
+        imageSlider.maximumValue = Float(arr.count - 1)
+        imageSlider.maximumTrackTintColor = .darkGray
+        imageSlider.setThumbImage(UIImage(named: "slider"), for: .normal)
+        imageSlider.markValues = arr
+        DispatchQueue.main.async {
+            self.imageSlider.drawMarks(in: self.markSlider.bounds)
+        }
        
     }
 

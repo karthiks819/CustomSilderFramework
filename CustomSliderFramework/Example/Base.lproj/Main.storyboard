@@ -22,17 +22,25 @@
                                     <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="HZl-8d-rHt"/>
                                 </connections>
                             </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="Ura-mP-BWO" customClass="CustomSlider" customModule="CustomSliderFramework">
+                                <rect key="frame" x="18" y="496.33333333333331" width="357" height="30.999999999999943"/>
+                            </slider>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemPurpleColor"/>
                         <constraints>
                             <constraint firstItem="llf-ZQ-lez" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Yv-Ti-nQu"/>
+                            <constraint firstItem="Ura-mP-BWO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4bC-Qu-j4s"/>
                             <constraint firstItem="llf-ZQ-lez" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9GI-fD-sxp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ura-mP-BWO" secondAttribute="trailing" constant="20" id="Qxc-5f-QxK"/>
                             <constraint firstItem="llf-ZQ-lez" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="j49-NK-3KS"/>
+                            <constraint firstItem="Ura-mP-BWO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mhL-6a-NUh"/>
+                            <constraint firstItem="Ura-mP-BWO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.2" id="rNC-sG-q2c"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="llf-ZQ-lez" secondAttribute="trailing" constant="16" id="uD2-wh-SzF"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageSlider" destination="Ura-mP-BWO" id="abh-wj-nuU"/>
                         <outlet property="markSlider" destination="llf-ZQ-lez" id="2gw-n7-xsX"/>
                     </connections>
                 </viewController>
