@@ -8,25 +8,29 @@
 import Foundation
 import UIKit
 
-enum MarkStyle {
+public enum MarkStyle {
     case shape(width: CGFloat, height: CGFloat, cornerRadius: CGFloat)
     case image(image: UIImage)
 }
 
-class CustomSlider: UISlider {
+open class CustomSlider: UISlider {
     open var markValues: [String] = []
     
-    open var markViews = [UIView]()
+     var markViews = [UIView]()
     
     open var isStayToMark: Bool = true
     
-    open var markStyle: MarkStyle = .shape(width: 1, height: 4, cornerRadius: 1)
+    open  var markStyle: MarkStyle = .shape(width: 1, height: 4, cornerRadius: 1)
     
     open var minimumMarkTintColor: UIColor = .white
     
     open var maximumMarkTintColor: UIColor = .white
     
+    open var toShowMarkOnSelectedValue = true
+    
     private var markContentView: UIView!
+    
+    open var markLabelFont: UIFont?
     
     private var validMarkValues: [String] {
         return markValues
@@ -35,7 +39,7 @@ class CustomSlider: UISlider {
     public func setMarkerColors() {
         for i in markViews {
             i.backgroundColor = Float(i.tag) > value ? maximumMarkTintColor : minimumMarkTintColor
-            if Float(i.tag) == value  {
+            if !toShowMarkOnSelectedValue &&  Float(i.tag) == value  {
                 i.backgroundColor = .clear
             }
         }
@@ -62,13 +66,13 @@ class CustomSlider: UISlider {
             let thumbFrame = thumbRect(forBounds: rect, trackRect: trackFrame, value: Float(i))
             switch markStyle {
             case .shape(let width, let height, let cornerRadius):
-                let markRect = CGRect(x: thumbFrame.midX - width / 2, y: thumbFrame.midY - height / 2, width: width, height: height)//CGRect(x: thumbFrame.midX - width / 2, y: thumbFrame.midY - height / 2, width: width, height: height)
+                let markRect = CGRect(x: thumbFrame.midX - width / 2, y: thumbFrame.midY - height / 2, width: width, height: height)
                 let markView = UIView(frame: markRect)
                 markView.layer.masksToBounds = true
                 markView.tag = i
                 markView.layer.cornerRadius = cornerRadius
                 markView.backgroundColor = Float(i) > value ? maximumMarkTintColor : minimumMarkTintColor
-                if Float(markView.tag) == value  {
+                if !toShowMarkOnSelectedValue && Float(markView.tag) == value  {
                     markView.backgroundColor = .clear
                 }
                 markContentView.addSubview(markView)
@@ -82,7 +86,12 @@ class CustomSlider: UISlider {
                 markLabel.textColor = .white
                 markLabel.layer.cornerRadius = cornerRadius
                 markLabel.backgroundColor = .clear
-                markLabel.font = UIFont.systemFont(ofSize: 10)
+                if let font = self.markLabelFont {
+                    markLabel.font = font
+                }else {
+                    markLabel.font = UIFont.systemFont(ofSize: 15)
+                }
+                
                 markLabel.adjustsFontSizeToFitWidth = true
                 markLabel.text = "\(markValue)"
                 markContentView.addSubview(markLabel)
@@ -96,6 +105,10 @@ class CustomSlider: UISlider {
                 markContentView.addSubview(markView)
             }
         }
+    }
+    
+    func printHello() {
+        print("hello")
     }
 }
 

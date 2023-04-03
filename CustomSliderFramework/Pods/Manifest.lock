@@ -1,0 +1,16 @@
+PODS:
+  - CustomSliderFramework (0.0.2)
+
+DEPENDENCIES:
+  - CustomSliderFramework (from `.`)
+
+EXTERNAL SOURCES:
+  CustomSliderFramework:
+    :path: "."
+
+SPEC CHECKSUMS:
+  CustomSliderFramework: 0c4f6448ef518b8d605f5c2c654b4555d910bf74
+
+PODFILE CHECKSUM: 840944d9814a0a1573de637dcd3d75fc62c2e9da
+
+COCOAPODS: 1.12.0
