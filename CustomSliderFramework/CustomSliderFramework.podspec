@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CustomSliderFramework"
-  spec.version      = "0.0.2"
+  spec.version      = "v0.0.1"
   spec.summary      = "UISlider with tap action and marker values on track rect and label for indicating the values of slider"
 
   # This description is used to generate tags and improve search results.
